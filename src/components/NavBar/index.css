@@ -38,14 +38,14 @@
 
 .scores {
   margin-right: 60px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .top-score {
   margin-left: 40px;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .hideScore-container {
-  display: none;
+  display: hide;
 }

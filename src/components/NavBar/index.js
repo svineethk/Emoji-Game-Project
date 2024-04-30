@@ -2,9 +2,12 @@
 import './index.css'
 
 const NavBar = props => {
-  const {isGameFinish, score, topScore} = props
+  let {isGameFinish} = props
+  const {score, topScore} = props
 
-  const hideScore = isGameFinish || score === 12 ? 'hideScore-container' : ''
+  if (score === 12) {
+    isGameFinish = !isGameFinish
+  }
 
   return (
     <div className="navbar">
@@ -16,10 +19,12 @@ const NavBar = props => {
         />
         <h1 className="emoji-header">Emoji Game</h1>
       </div>
-      <div className={`score-container ${hideScore}`}>
-        <p className="scores">Score: {score}</p>
-        <p className="top-score">Top Score: {topScore}</p>
-      </div>
+      {!isGameFinish && (
+        <div className="score-container">
+          <p className="scores">Score: {score}</p>
+          <p className="top-score">Top Score: {topScore}</p>
+        </div>
+      )}
     </div>
   )
 }
