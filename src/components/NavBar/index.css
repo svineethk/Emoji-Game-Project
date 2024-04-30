@@ -49,3 +49,53 @@
 .hideScore-container {
   display: hide;
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 65px;
+    width: 100vw;
+    background-color: #6a59ff;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .emoji-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .emoji-header {
+    margin-left: 5px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .score-container {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+    height: 95px;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scores {
+    margin-right: 30px;
+    font-size: 15px;
+  }
+
+  .top-score {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+}

@@ -18,3 +18,25 @@ li {
   list-style-type: none;
   cursor: pointer;
 }
+
+@media (max-width: 576px) {
+  .each-emoji {
+    height: 120px;
+    width: 130px;
+    background-color: #ffffff33;
+    margin-right: 0px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
+  }
+
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+}

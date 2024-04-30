@@ -54,3 +54,72 @@
   outline: none;
   border-color: transparent;
 }
+
+@media (max-width: 576px) {
+  /* Write your code here. */
+  .result-container {
+    height: 700px;
+    width: 400px;
+    background-color: #ffffff33;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border-radius: 12px;
+    margin: 10px;
+    margin-top: 30px;
+  }
+
+  .mark-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .score-result {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .score {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 35px;
+  }
+
+  .score-mark {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #6a59ff;
+    font-size: 35px;
+  }
+
+  .play-again {
+    margin-top: 30px;
+    padding: 0px;
+    height: 50px;
+    width: 100px;
+    border-radius: 13px;
+    background-color: #ffce27;
+    font-family: Roboto;
+    font-weight: bold;
+    outline: none;
+    border-color: transparent;
+  }
+
+  .win-or-loss-emoji {
+    height: 350px;
+    width: 350px;
+    margin-top: 30px;
+  }
+}

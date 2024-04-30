@@ -29,6 +29,7 @@ const WinOrLoseCard = props => {
               : 'https://assets.ccbp.in/frontend/react-js/lose-game-img.png'
           }
           alt="win or lose"
+          className="win-or-loss-emoji"
         />
       </div>
     </div>
